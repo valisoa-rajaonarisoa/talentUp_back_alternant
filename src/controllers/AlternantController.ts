@@ -1,6 +1,5 @@
 import { Request, Response } from "express";
 import { AlternantService } from "../services/AlternantService";
-import { error } from "console";
 
 export class AlternantController {
   //   ************create Alternant
@@ -19,12 +18,10 @@ export class AlternantController {
       res.status(201).json(createAlternant);
       return;
     } catch (error) {
-      res
-        .status(500)
-        .json({
-          error:
-            "erreur lors de la creation d'un Alternant micro-service alternant",
-        });
+      res.status(500).json({
+        error:
+          "erreur lors de la creation d'un Alternant micro-service alternant",
+      });
     }
   }
 

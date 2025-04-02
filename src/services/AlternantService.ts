@@ -1,5 +1,5 @@
-import { AppDataSource } from "../../config/database";
-import { TalentAlternant } from "../../entities/alternant.entity";
+import { AppDataSource } from "../config/database";
+import { TalentAlternant } from "../entities/alternant.entity";
 
 interface IData {
   keycloakId: string;

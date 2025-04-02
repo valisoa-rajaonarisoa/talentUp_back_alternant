@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { AlternantController } from "../alternant/controllers/AlternantController";
+import { AlternantController } from "../controllers/AlternantController";
 
 const router = Router();
 

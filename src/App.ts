@@ -3,6 +3,8 @@ import express from "express";
 // import alternant from "./routesalternant";
 
 import alternantRoute from "./routes/AlternantRoute";
+import WebinaireRoute from "./routes/WebinaireRoute";
+
 import cors from "cors";
 
 class App {
@@ -33,6 +35,8 @@ class App {
 
   private initialisationRoutes(): void {
     this.app.use("/", alternantRoute);
+    this.app.use("/", WebinaireRoute);
+
   }
 }
 
